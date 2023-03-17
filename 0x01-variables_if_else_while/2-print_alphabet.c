@@ -6,15 +6,12 @@
  */
 int main(void)
 {
-        char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char alpha;
 
-	i = 1;
-
-	while (i <= 20)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		putchar(alpha[i]);
-		i++;
+		putchar(alpha);
 	}
+	putchar('\n');
 	return (0);
 }
