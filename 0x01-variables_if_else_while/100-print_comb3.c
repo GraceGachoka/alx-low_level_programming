@@ -2,7 +2,7 @@
 
 
 /**
- * main Print a diagonal table
+ * main - Print a diagonal table
  *
  * Return: 0 Always (Success)
  */
@@ -11,11 +11,11 @@ int main(void)
 	int x;
 	int y;
 
-	for (x = 1; x < 10; x++)
+	for (y = 0; y < 9; y++)
 	{
-		for (y = 0; y < 9; y++)
+		for (x = 0; x < 10; x++)
 		{
-			if (y < x)
+			if (x > y)
 			{
 				putchar((y % 9) + '0');
 				putchar((x % 10) + '0');
