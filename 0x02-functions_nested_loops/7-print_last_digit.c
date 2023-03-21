@@ -13,6 +13,6 @@
 
 	Lastdigit = (n % 10);
 	x = Lastdigit;
-	_putchar(x + '0');
+	_putchar('0' + x);
 	return (x);
 }
