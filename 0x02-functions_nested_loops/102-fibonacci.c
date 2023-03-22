@@ -16,11 +16,14 @@ int main(void)
 	{
 		sum = a + b;
 		printf("%lu", sum);
-		printf(",");
-		printf(" ");
-		a = b;
-		b = sum;
-		if (n == 49)
+		if (n != 49)
+		{
+			printf(",");
+			printf(" ");
+			a = b;
+			b = sum;
+		}
+		else if (n == 49)
 		{
 			printf("\n");
 		}
