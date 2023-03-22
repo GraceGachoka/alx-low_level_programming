@@ -3,7 +3,7 @@
 /**
  * main - Print fibonacci numbers
  *
- * Retrn: Fibonacci
+ * Return: Fibonacci
  */
 int main(void)
 {
@@ -14,15 +14,14 @@ int main(void)
 
 	for (n = 0; n < 50; n++)
 	{
-		sum = a+b;
-		printf("%lu",sum);
+		sum = a + b;
+		printf("%lu", sum);
 		printf(",");
-		printf("\t");
+		printf(" ");
 		a = b;
 		b = sum;
 		if (n == 49)
 		{
-			printf(",");
 			printf("\n");
 		}
 	}
