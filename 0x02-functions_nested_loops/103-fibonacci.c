@@ -22,9 +22,9 @@ int main(void)
 		if (a % 2 == 0 && a < 4000000)
 		{
 			even = even + a;
-			printf("%lu", even);
 		}
 	}
+	printf("%lu", even);
 	printf("\n");
 	return (0);
 }
