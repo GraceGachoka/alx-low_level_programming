@@ -1,1 +1,1 @@
-C functions and nested loops
+Advanced tasks in C functions
