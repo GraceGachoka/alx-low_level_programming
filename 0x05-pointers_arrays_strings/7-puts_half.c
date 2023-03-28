@@ -17,10 +17,10 @@ void puts_half(char *str)
 	for (a = 0; str[a] != 0; a++)
 	{
 		y++;
-		x = y/2;
+		x = y / 2;
 		if (y % 2 == 1)
 		{
-			x = (y + 1)/2;
+			x = (y + 1) / 2;
 		}
 	}
 		for (a = x; str[a] != 0; a++)
@@ -29,5 +29,3 @@ void puts_half(char *str)
 		}
 		_putchar('\n');
 }
-
-
