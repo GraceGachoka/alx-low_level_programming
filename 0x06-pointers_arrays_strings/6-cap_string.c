@@ -22,18 +22,31 @@ char *cap_string(char *n)
 			}
 			continue;
 		}
-		if ( n[x] == ' ' || '\t' || '\n' || ',' || ';' || '.' || '!' || '?' || '"' ||'(' ||')' ||'{' || '}')
+		if (n[x] == ' ')
 		{
-			x++;
+			++x;
 			if (n[x] >= 'a' && n[x] <= 'z')
 			{
 				n[x] = n[x] - 32;
-				continue;
 			}
-			else if (n[x] >= 'A' && n[x] <= 'Z')
+			continue;
+			}
+		else if (n[x] == '.')
+		{
+			++x;
+			if (n[x] >= 'a' && n[x] <= 'z')
+			{
+				n[x] = n[x] - 32;
+			}
+			continue;
+		}
+		else
+		{
+			if (n[x] >= 'A' && n[x] <= 'Z')
 			{
 				n[x] = n[x] + 32;
-			}}
+			}
+		}
 	}
 	return (n);
 }
