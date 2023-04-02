@@ -25,22 +25,25 @@ int main(void)
 				printf("FizzBuzz");
 			}
 		}
-		else if (i % 3 == 0)
+		if (i != 100)
 		{
-			printf("Fizz");
-			printf(" ");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz");
-			printf(" ");
-		}
-		else
-		{
-			printf("%d", i);
-			printf(" ");
+			if (i % 3 == 0)
+			{
+				printf("Fizz");
+				printf(" ");
+			}
+			else if (i % 5 == 0)
+			{
+				printf("Buzz");
+				printf(" ");
+			}
+			else
+			{
+				printf("%d", i);
+				printf(" ");
+			}
 		}
 	}
-	printf("\n");
-	return (0);
+		printf("\n");
+		return (0);
 }
